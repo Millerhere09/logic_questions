@@ -1,0 +1,28 @@
+package interviewlogic;
+import java.util.*;
+public class e_palindromestring {
+    public static void main(String[] args) {
+        Scanner DJ = new Scanner(System.in);
+        String a = DJ.nextLine();
+        String rev = "";
+
+        /*
+
+        for(int i=a.length()-1;i>=0;i--){
+            rev = rev+a.charAt(i);
+        }
+
+         */
+
+        char b[] = a.toCharArray();
+        for(int i=a.length()-1;i>=0;i--){
+            rev=rev+b[i];
+        }
+
+        if(rev.equals(a)){
+            System.out.println("It is Palindrome");
+        } else {
+            System.out.println("It is not palindrome");
+        }
+    }
+}
