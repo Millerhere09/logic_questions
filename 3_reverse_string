@@ -1,0 +1,38 @@
+package interviewlogic;
+import java.util.*;
+public class c_reversestring {
+    public static void main(String[] args) {
+        Scanner DJ = new Scanner(System.in);
+        String a = DJ.nextLine();    //ABCD
+
+        //Logic 1️⃣ = using + string concatenation operator
+
+        /*
+
+        String rev = "";
+        for(int i=a.length()-1;i>=0;i--){      //3  2  1  0
+            rev = rev+a.charAt(i);             //DCBA
+        }
+        System.out.println(rev);
+
+         */
+
+        //Logic 2️⃣ = using character array
+
+        /*
+
+        String rev = "" ;
+        char s[] = a.toCharArray();
+        for(int i=a.length()-1;i>=0;i--){      //3  2  1  0
+            rev = rev+s[i];                    //DCBA
+        }
+        System.out.println(rev);
+
+         */
+
+        //Logic 3️⃣  using stringbuffer and stringbuilder also use
+        StringBuffer z = new StringBuffer(a);
+        z.reverse();
+        System.out.println(z);
+    }
+}
