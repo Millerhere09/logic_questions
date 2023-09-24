@@ -1,1 +1,39 @@
+package interviewlogic;
+import java.util.*;
+public class b_reversenumber {
+    public static void main(String[] args) {
+        Scanner DJ = new Scanner(System.in);
+        int n = DJ.nextInt();  //1234
+
+        //Logic 1️⃣ = using algorithm
+        /*
+
+        int rev=0;
+        while(n!= 0){
+            rev = rev*10 + n%10;  //0+1234%10=4     4*10+123%10=43   43*10+12%10=432   432*10+1%10=4321
+            n = n/10;             //1234/10=123     123/10=12        12/10=1           1/10=0
+        }
+        System.out.println(rev);
+
+         */
+
+        //Logic 2️⃣ = stringbuffer class
+
+       /*
+
+        StringBuffer a = new StringBuffer(String.valueOf(n));
+        StringBuffer rev = a.reverse();
+        System.out.println(rev);
+
+        */
+
+        //Logic 3️⃣ = stringbuilder class
+
+        StringBuilder sbl = new StringBuilder();
+        sbl.append(n);
+        StringBuilder rev= sbl.reverse();
+        System.out.println(rev);
+
+    }
+}
 
