@@ -1,0 +1,52 @@
+package interviewlogic;
+import java.util.*;
+public class a_swap {
+    public static void main(String[] args) {
+         Scanner DJ = new Scanner(System.in);
+         int a = DJ.nextInt();   //10
+         int b = DJ.nextInt();   //20
+        System.out.println("Before Swapping "+a+" "+b);
+
+        //Logic 1️⃣ - Third variable
+
+        /*
+        int t = a;
+        a = b;
+        b = a;
+         */
+
+        //Logic 2️⃣ - use plus and minus, without using third variable
+
+        /*
+        a=a+b;        //10+20=30
+        b=a-b;        //30-20=10
+        a=a-b;        //30-10=20
+
+         */
+
+        //Logic 3️⃣ - use * and / without using third variable, here a and b values should not be zero.
+        /*
+        a=a*b;  // 10*20=200
+        b=a/b;  // 200/20=10
+        a=a/b;  // 200/10=20
+
+         */
+
+        //Logic 4️⃣ - bitwise XOR(^)
+
+        /*
+        a=a^b;
+        b=a^b;
+        a=a^b;
+
+         */
+
+        //Logic 5️⃣ - single statement
+
+        b=a+b-(a=b);
+
+
+
+        System.out.println("After swapping "+a+" "+b);
+    }
+}
