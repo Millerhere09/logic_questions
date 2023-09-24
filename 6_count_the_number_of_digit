@@ -1,0 +1,14 @@
+package interviewlogic;
+import java.util.Scanner;
+public class f_count_the_no_of_digits {
+    public static void main(String[] args) {
+        Scanner DJ = new Scanner(System.in);
+        int  n = DJ.nextInt();  //12345
+        int count=0;
+        while(n!=0){
+            n = n/10;    //1234  123  12  1  0
+            count++;     //1     2    3   2  1
+        }
+        System.out.println(count);
+    }
+}
