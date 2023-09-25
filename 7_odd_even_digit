@@ -1,0 +1,19 @@
+package interviewlogic;
+import java.util.*;
+public class g_odd_even {
+    public static void main(String[] args) {
+        Scanner DJ = new Scanner(System.in);
+        int n = DJ.nextInt();
+        int odd_count=0;
+        int even_count=0;
+        while(n!=0){
+            n=n/10;
+            if(n%2==0){
+                even_count++;
+            } else{
+                odd_count++;
+            }
+        }
+        System.out.println(even_count +" "+odd_count);
+    }
+}
